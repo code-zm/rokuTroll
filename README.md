@@ -4,7 +4,7 @@ A simple Bash script to find Roku TV devices on a local network and Rick Roll th
 
 ---
 
-#### Disclaimer
+## Disclaimer
 **This script is provided for educational and entertainment purposes only. Please be aware of the following:**
 - Only use this script on networks and devices that you own, have permission to use, or have explicit authorization to access.
 - Scanning networks and controlling devices without consent is a violation of privacy and may be illegal.
@@ -14,7 +14,7 @@ A simple Bash script to find Roku TV devices on a local network and Rick Roll th
 
 ---
 
-#### Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -25,7 +25,7 @@ A simple Bash script to find Roku TV devices on a local network and Rick Roll th
 
 ---
 
-#### Features
+### Features
 - Network Scanning: Automatically scans your local network for Roku devices.
 - Manual IP Option: Directly enter a device's IP address if you know it.
 - Rick Roll: Sends commands to turn on the device, launch YouTube, and play "Never Gonna Give You Up" by Rick Astley.
@@ -33,7 +33,7 @@ A simple Bash script to find Roku TV devices on a local network and Rick Roll th
 
 ---
 
-#### Prerequisites
+### Prerequisites
 Ensure you have the following installed and set up:
 - Git: [Download and install Git](https://git-scm.com/downloads)
 - nmap: A network scanning tool. Install it using:
@@ -49,7 +49,7 @@ Ensure you have the following installed and set up:
 
 ---
 
-#### Installation
+### Installation
 1. Clone the repository:
     ```bash
     git clone https://github.com/code-zm/rokuTroll.git
@@ -67,7 +67,7 @@ Ensure you have the following installed and set up:
 
 ---
 
-#### Usage
+### Usage
 1. Run the script:
     ```bash
     ./roku-script.sh
@@ -82,7 +82,7 @@ Ensure you have the following installed and set up:
 
 ---
 
-#### Contributing
+### Contributing
 Contributions are welcome! Please fork the repository and use a feature branch. Pull requests are welcome.
 
 1. Fork the project
@@ -93,12 +93,11 @@ Contributions are welcome! Please fork the repository and use a feature branch. 
 
 ---
 
-#### License
+### License
 This project is open-source and available under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-#### Acknowledgments
-- Inspired by the fun of Rick Rolling! 🎸🎶
+### Acknowledgments
 - Thanks to the creators of the [Roku External Control API](https://developer.roku.com/docs/developer-program/dev-tools/external-control-api.md).
 - Thanks to [GitHub](https://github.com/) for hosting this project.
