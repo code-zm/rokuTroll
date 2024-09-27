@@ -62,7 +62,7 @@ Ensure you have the following installed and set up:
 
 3. Make the script executable:
     ```bash
-    chmod +x roku-script.sh
+    chmod +x rokuTroll.sh
     ```
 
 ---
@@ -70,7 +70,7 @@ Ensure you have the following installed and set up:
 ### Usage
 1. Run the script:
     ```bash
-    ./roku-script.sh
+    ./rokuTroll.sh
     ```
 2. Select an option:
    - Choose `[1]` to manually enter an IP address.
