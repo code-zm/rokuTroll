@@ -1,4 +1,4 @@
-# RokuTroll
+# rokuTroll
 
 A simple Bash script to find Roku TV devices on a local network and initiate a fun Rick Roll prank! 📺🎶 
 
