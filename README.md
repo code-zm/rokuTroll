@@ -1,6 +1,8 @@
 # rokuTroll
 
-An interactive Bash script to find Roku TV devices on a local network and Rick Roll them.  
+An interactive Bash script to find Roku TV devices on a local network and Rick Roll them.
+![image](https://github.com/user-attachments/assets/449be8a7-d7d1-4094-a687-58f0a0acac96)
+  
 
 ---
 
