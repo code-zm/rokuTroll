@@ -1,16 +1,16 @@
 # rokuTroll
 
-A simple Bash script to find Roku TV devices on a local network and initiate a fun Rick Roll prank! 📺🎶 
+A simple Bash script to find Roku TV devices on a local network and Rick Roll them.  
 
 ---
 
 #### Disclaimer
-This script is provided for educational and entertainment purposes only. Please be aware of the following:
-- Ethical Use: Only use this script on networks and devices that you own, have permission to use, or have explicit authorization to access.
-- Respect Privacy: Scanning networks and controlling devices without consent is a violation of privacy and may be illegal.
-- Legal Responsibility: The creators and contributors of this script are not responsible for any misuse, damage, or legal issues that arise from using this script.
+**This script is provided for educational and entertainment purposes only. Please be aware of the following:**
+- Only use this script on networks and devices that you own, have permission to use, or have explicit authorization to access.
+- Scanning networks and controlling devices without consent is a violation of privacy and may be illegal.
+- The creators and contributors of this script are not responsible for any misuse, damage, or legal issues that arise from using this script.
 
-By using this script, you agree to take full responsibility for your actions and comply with all applicable laws and regulations.
+**By using this script, you agree to take full responsibility for your actions and comply with all applicable laws and regulations.**
 
 ---
 
