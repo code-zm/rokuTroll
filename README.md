@@ -96,7 +96,7 @@ Contributions are welcome! Please fork the repository and use a feature branch. 
 ---
 
 ### License
-This project is open-source and available under the MIT License. See the `LICENSE` file for more details.
+This project is open-source and available under the MIT License.
 
 ---
 
