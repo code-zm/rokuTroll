@@ -25,6 +25,24 @@ echo -e " └── [2] Scan the Network"
 echo -n "      └─> "
 read -r option 
 
+# Get the IP address and subnet in CIDR format dynamically
+cidr=$(ip -o -f inet addr show | awk '/scope global/ {print $4}' | head -n 1)
+
+# Extract IP and prefix length
+ip=$(echo $cidr | cut -d'/' -f1)
+prefix=$(echo $cidr | cut -d'/' -f2)
+
+# Calculate the network address
+IFS=. read -r i1 i2 i3 i4 <<< "$ip"
+mask=$((0xffffffff << (32 - prefix) & 0xffffffff))
+n1=$((i1 & (mask >> 24)))
+n2=$((i2 & (mask >> 16 & 0xff)))
+n3=$((i3 & (mask >> 8 & 0xff)))
+n4=$((i4 & (mask & 0xff)))
+
+# Format the output as network/prefix
+network="$n1.$n2.$n3.$n4/$prefix"
+
 # Option 1: Manual IP Entry
 if [[ $option -eq 1 ]]; then
     echo
@@ -76,8 +94,8 @@ if [[ $option -eq 1 ]]; then
 # Option 2: Network Scan
 elif [[ $option -eq 2 ]]; then 
     # Scan the network for devices with port 8060 open
-    echo " └── Scanning the network for Roku devices on port 8060..." 	
-    nmap_output=$(nmap -p 8060 --open 192.168.1.0/24 -oG - | grep "Ports: 8060/open" | awk '{print $2}')
+    echo " └── Scanning $network for Roku devices on port 8060..." 	
+    nmap_output=$(nmap -p 8060 --open "$network" -oG - | grep "Ports: 8060/open" | awk '{print $2}')
 
     # Validate scan results
     if [[ -z "$nmap_output" ]]; then 
