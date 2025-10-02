@@ -49,6 +49,13 @@ Ensure you have the following installed and set up:
         ```
 - Bash: Your system should support Bash scripting (most Unix-based systems have this pre-installed).
 
+**⚠️ Important: Roku Device Configuration Required**
+- For Roku OS 14.1+ devices (released December 2024), you must manually enable external control using the physical remote:
+  - Navigate to: **Settings → System → Advanced system settings → Control by mobile apps → Network access**
+  - Select either **"Default"** (recommended) or **"Permissive"** (for advanced network configurations)
+  - Without this setting enabled, keypress commands will return `403 Forbidden` errors and the script will not work
+- This is a security feature introduced by Roku and cannot be enabled programmatically via the API
+
 ---
 
 ### Installation

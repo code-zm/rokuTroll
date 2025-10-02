@@ -187,47 +187,30 @@ sleep 15
 curl -d '' "http://$IP:8060/keypress/up"
 sleep 1
 echo " └── Searching for Rick Roll..."
-curl -d '' "http://$IP:8060/keypress/select" # click search 
-sleep 1
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/right"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/down"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/select" # click n
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/up"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/select" # click e
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/left"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/down"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/down"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/down"
-sleep 0.15
-curl -d '' "http://$IP:8060/keypress/select" # click v
+curl -d '' "http://$IP:8060/keypress/select" # click search
+sleep 2
+# Type "never gonna" using Lit_ prefix
+curl -d '' "http://$IP:8060/keypress/Lit_n"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_e"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_v"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_e"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_r"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_%20" # space
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_g"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_o"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_n"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_n"
+sleep 0.1
+curl -d '' "http://$IP:8060/keypress/Lit_a"
 sleep 0.15
 curl -d '' "http://$IP:8060/keypress/left" # go to quick search
 sleep 0.15
@@ -236,7 +219,7 @@ echo " └── Rick Roll initiated, maxing out volume..."
 sleep 1
 curl -d '' "http://$IP:8060/keypress/right"
 sleep 0.125
-for  in {1..100}; do
+for i in {1..100}; do
   curl -d '' "http://$IP:8060/keypress/volumeup"
   sleep 0.05
 done
